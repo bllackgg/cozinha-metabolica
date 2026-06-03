@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da Dra. Clara — 19 Receitas Sem Glúten e Sem Açúcar</title>
+    <meta name="description" content="19 receitas de bolo sem glúten e sem açúcar. Controle a glicemia sem abrir mão do sabor.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --green:       #2A5C35;
+            --green-dark:  #1B3D23;
+            --green-light: #EAF4EC;
+            --black:       #111;
+            --dark:        #1A1A1A;
+            --gray:        #555;
+            --gray-light:  #F5F5F5;
+            --border:      #DDD;
+            --white:       #FFF;
+            --orange:      #E03C0A;
+            --orange-h:    #C13208;
+            --yellow:      #F5A623;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--white);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        img { max-width: 100%; display: block; }
+
+        .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+        /* ══ HERO ══ */
+        .hero {
+            background: var(--green-dark);
+            padding: 52px 20px 48px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--yellow);
+            color: var(--dark);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(26px, 5.5vw, 46px);
+            font-weight: 900;
+            line-height: 1.1;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero h1 em {
+            color: var(--yellow);
+            font-style: normal;
+        }
+
+        .hero-sub {
+            font-size: 16px;
+            color: rgba(255,255,255,.78);
+            max-width: 480px;
+            margin: 0 auto 32px;
+            font-weight: 400;
+        }
+
+        /* ══ MOCKUP IMAGE ══ */
+        .hero-mockup {
+            max-width: 480px;
+            margin: 0 auto 36px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,.5);
+        }
+
+        .hero-mockup img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        /* CSS fallback se não tiver imagem */
+        .book-css {
+            width: 220px;
+            height: 300px;
+            margin: 0 auto 36px;
+            background: linear-gradient(160deg, #3A7A4A 0%, #2A5C35 100%);
+            border-radius: 4px 14px 14px 4px;
+            box-shadow: -6px 6px 0 #0d1f11, -10px 12px 30px rgba(0,0,0,.5);
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            padding: 24px 20px;
+            position: relative;
+            border-left: 6px solid #1B3D23;
+        }
+
+        .book-css::before {
+            content: '';
+            position: absolute;
+            top: 14px; left: 14px; right: 14px; bottom: 14px;
+            border: 1px solid rgba(255,255,255,.18);
+            border-radius: 2px;
+            pointer-events: none;
+        }
+
+        .book-css-tag {
+            position: absolute; top: 14px; right: 14px;
+            background: var(--yellow); color: var(--dark);
+            font-size: 9px; font-weight: 800;
+            padding: 3px 8px; border-radius: 10px;
+        }
+
+        .book-css-title {
+            font-family: 'Playfair Display', serif;
+            color: #fff; font-size: 22px;
+            text-align: center; line-height: 1.2; margin-bottom: 8px;
+        }
+
+        .book-css-label {
+            color: var(--yellow);
+            font-size: 9px; text-align: center;
+            letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;
+        }
+
+        .book-css-hr { width: 40px; height: 1px; background: rgba(255,255,255,.3); margin-bottom: 14px; }
+
+        .book-css-author { color: rgba(255,255,255,.5); font-size: 10px; text-align: center; }
+
+        /* ══ CTA BUTTON ══ */
+        .btn-cta {
+            display: block;
+            background: var(--orange);
+            color: #fff;
+            text-decoration: none;
+            padding: 22px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            max-width: 520px;
+            margin: 0 auto;
+            transition: background .2s, transform .15s;
+            box-shadow: 0 6px 24px rgba(224,60,10,.45);
+        }
+
+        .btn-cta:hover { background: var(--orange-h); transform: translateY(-2px); }
+        .btn-cta:active { transform: translateY(0); }
+
+        .btn-cta small {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            opacity: .85;
+            margin-top: 6px;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .btn-cta-green {
+            display: block;
+            background: var(--orange);
+            color: #fff;
+            text-decoration: none;
+            padding: 22px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            max-width: 520px;
+            margin: 0 auto;
+            transition: background .2s, transform .15s;
+            box-shadow: 0 6px 24px rgba(224,60,10,.45);
+        }
+
+        .btn-cta-green:hover { background: var(--orange-h); transform: translateY(-2px); }
+        .btn-cta-green small {
+            display: block; font-size: 12px; font-weight: 500;
+            opacity: .85; margin-top: 6px; text-transform: none; letter-spacing: 0;
+        }
+
+        .cta-security {
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255,255,255,.55);
+            margin-top: 12px;
+        }
+
+        .cta-security-dark {
+            text-align: center;
+            font-size: 12px;
+            color: var(--gray);
+            margin-top: 12px;
+        }
+
+        /* ══ DIVIDER ══ */
+        .divider { border: none; border-top: 1px solid var(--border); }
+
+        /* ══ SECTIONS ══ */
+        .section { padding: 60px 20px; }
+        .section-gray { background: var(--gray-light); }
+        .section-dark { background: var(--dark); color: #fff; }
+        .section-green { background: #FFFBF4; }
+        .section-green-light { background: var(--green-light); }
+
+        .section-eyebrow {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--green);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section-eyebrow-white {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--orange);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: clamp(22px, 4.5vw, 36px);
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.15;
+            text-align: center;
+            margin-bottom: 14px;
+            color: var(--black);
+        }
+
+        .section-title em { color: var(--orange); font-style: normal; }
+        .section-dark .section-title { color: #fff; }
+        .section-green .section-title { color: var(--black); }
+        .section-green .section-title em { color: var(--orange); }
+
+        .section-sub {
+            font-size: 15px;
+            color: var(--gray);
+            text-align: center;
+            max-width: 520px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .section-dark .section-sub { color: rgba(255,255,255,.7); }
+        .section-green .section-sub { color: var(--gray); }
+
+        /* ══ PROMISE SECTION ══ */
+        .promise-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--dark);
+            max-width: 580px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .promise-text strong { color: var(--green); font-weight: 700; }
+
+        /* ══ RECIPE LIST ══ */
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            max-width: 560px;
+            margin: 0 auto 40px;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .recipe-item::before {
+            content: '✓';
+            width: 22px; height: 22px;
+            border-radius: 50%;
+            background: var(--green);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .recipe-item.full { grid-column: 1 / -1; }
+
+        /* ══ BONUS LIST ══ */
+        .bonus-list {
+            list-style: none;
+            max-width: 480px;
+            margin: 24px auto 0;
+            display: grid;
+            gap: 12px;
+        }
+
+        .bonus-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .bonus-icon {
+            width: 32px; height: 32px;
+            background: var(--yellow);
+            border-radius: 6px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* ══ FOOD PHOTOS ══ */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+
+        /* ══ TESTIMONIALS ══ */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: #E8F5E2;
+            border-radius: 12px;
+            padding: 16px;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 48px;
+            background: #25D366;
+            border-radius: 12px 12px 0 0;
+            display: block;
+        }
+
+        .wa-header {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            min-height: 36px;
+            padding: 4px 0;
+        }
+
+        .wa-dot {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 13px; font-weight: 700;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .wa-name {
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .wa-bubble {
+            background: #fff;
+            border-radius: 0 10px 10px 10px;
+            padding: 12px;
+            font-size: 13px;
+            line-height: 1.65;
+            color: var(--dark);
+            box-shadow: 0 1px 3px rgba(0,0,0,.1);
+            margin-bottom: 6px;
+        }
+
+        .wa-time {
+            text-align: right;
+            font-size: 10px;
+            color: var(--gray);
+        }
+
+        /* ══ ADVANTAGES ══ */
+        .advantages {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .advantage-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .advantage-icon { font-size: 32px; margin-bottom: 10px; }
+        .advantage-title { font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--dark); }
+        .advantage-text { font-size: 13px; color: var(--gray); line-height: 1.55; }
+
+        /* ══ OFFER ══ */
+        .offer-box {
+            background: var(--white);
+            border: 3px solid var(--green);
+            border-radius: 16px;
+            padding: 36px 28px;
+            max-width: 480px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .offer-promo-badge {
+            display: inline-block;
+            background: var(--orange);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .offer-from {
+            font-size: 16px;
+            color: var(--gray);
+            text-decoration: line-through;
+            margin-bottom: 4px;
+        }
+
+        .offer-price {
+            font-size: clamp(48px, 10vw, 72px);
+            font-weight: 900;
+            color: var(--green);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .offer-price span {
+            font-size: 28px;
+            vertical-align: super;
+        }
+
+        .offer-label {
+            font-size: 13px;
+            color: var(--gray);
+            margin-bottom: 28px;
+        }
+
+        .offer-includes {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 28px;
+            display: grid;
+            gap: 10px;
+        }
+
+        .offer-includes li {
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--dark);
+        }
+
+        .offer-includes li::before {
+            content: '✓';
+            width: 20px; height: 20px;
+            border-radius: 50%;
+            background: var(--green);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* ══ AUTHOR ══ */
+        .author-section {
+            display: flex;
+            gap: 28px;
+            align-items: flex-start;
+            max-width: 580px;
+            margin: 0 auto;
+        }
+
+        .author-photo-wrap {
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        .author-photo-wrap img {
+            width: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 8px 24px rgba(0,0,0,.15);
+        }
+
+        .author-photo-placeholder {
+            width: 140px; height: 140px;
+            border-radius: 50%;
+            background: var(--green-light);
+            border: 4px solid var(--green);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 52px;
+        }
+
+        .author-name { font-size: 20px; font-weight: 800; color: var(--black); margin-bottom: 4px; }
+        .author-crn { font-size: 12px; font-weight: 700; color: var(--green); letter-spacing: .5px; margin-bottom: 14px; }
+        .author-bio { font-size: 14px; color: var(--gray); line-height: 1.75; }
+
+        /* ══ GUARANTEE ══ */
+        .guarantee-box {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            max-width: 520px;
+            margin: 0 auto;
+            background: var(--white);
+            border: 2px solid var(--green);
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        .seal-img { width: 90px; flex-shrink: 0; }
+
+        .guarantee-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--green);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .guarantee-text { font-size: 14px; color: var(--gray); line-height: 1.7; }
+
+        /* ══ FOOTER ══ */
+        footer {
+            background: #111;
+            padding: 32px 20px;
+            text-align: center;
+        }
+
+        footer p { font-size: 12px; color: rgba(255,255,255,.38); line-height: 2.1; }
+        footer a { color: rgba(255,255,255,.5); text-decoration: none; }
+
+        /* ══ UTILS ══ */
+        .mt-12 { margin-top: 12px; }
+        .mt-20 { margin-top: 20px; }
+        .mt-32 { margin-top: 32px; }
+        .mt-40 { margin-top: 40px; }
+        .text-center { text-align: center; }
+        .text-small { font-size: 12px; color: var(--gray); }
+
+        /* ══ RESPONSIVE ══ */
+        @media (max-width: 540px) {
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .advantages { grid-template-columns: 1fr; }
+            .recipe-grid { grid-template-columns: 1fr; }
+            .author-section { flex-direction: column; align-items: center; text-align: center; }
+            .guarantee-box { flex-direction: column; text-align: center; }
+            .photo-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero">
+    <div class="container">
+        <span class="hero-badge">Nutricionista Especialista em Diabetes</span>
+
+        <h1>
+            Desbloqueie agora as receitas que<br>
+            <em>mais de 37 mil mulheres</em> já usam<br>
+            para comer bolo sem medo
+        </h1>
+
+        <p class="hero-sub">
+            Agora a família toda pode comer. Sem disparar a glicemia. Sem abrir mão do sabor.
+        </p>
+
+        <!-- MOCKUP — substitua o src por uma foto real da capa do ebook -->
+        <div class="book-css">
+            <span class="book-css-tag">19 receitas</span>
+            <div class="book-css-title">Bolos da<br>Dra. Clara</div>
+            <div class="book-css-label">Sem Glúten · Sem Açúcar</div>
+            <div class="book-css-hr"></div>
+            <div class="book-css-author">Cozinha Metabólica</div>
+        </div>
+
+        <a href="SEU_LINK_CAKTO" class="btn-cta">
+            SIM! EU TAMBÉM QUERO ESSAS RECEITAS<br><small style="font-size:13px;font-weight:500;opacity:.8;text-transform:none;letter-spacing:0;"><s style="opacity:.75;">DE R$47,90</s> &nbsp;POR APENAS <span style="font-size:120%;font-weight:900;color:#fff;">R$19,90</span></small>
+            <small>Acesso imediato após o pagamento · Garantia de 7 dias</small>
+        </a>
+        <p class="cta-security">🔒 Pagamento 100% seguro</p>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PROMESSA
+══════════════════════════════════════ -->
+<section class="section">
+    <div class="container">
+        <p class="section-eyebrow">É possível</p>
+        <h2 class="section-title">Uma nova vida com diabetes<br><em>é totalmente possível</em></h2>
+
+        <div style="text-align:center;margin-bottom:32px;">
+            <img src="dra-clara-headshot.png" alt="Dra. Clara Melo"
+                 style="width:180px;height:180px;border-radius:50%;object-fit:cover;object-position:center top;
+                        border:4px solid var(--green);box-shadow:0 8px 28px rgba(0,0,0,.18);
+                        display:block;margin:0 auto 12px;">
+            <div style="font-size:15px;font-weight:800;color:var(--dark);">Dra. Clara Melo</div>
+            <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:3px;">Nutricionista Especialista em Saúde Metabólica</div>
+        </div>
+
+        <p class="promise-text">
+            Você não precisa parar de comer bolo para controlar a glicemia.<br>
+            Você só precisa das <strong>receitas certas</strong> — desenvolvidas por uma
+            nutricionista que passou anos cuidando de pacientes com diabetes tipo 2 e
+            resistência à insulina.
+        </p>
+    </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════════
+     O QUE ESTÁ INCLUSO
+══════════════════════════════════════ -->
+<section class="section section-gray">
+    <div class="container">
+        <p class="section-eyebrow">O que você recebe</p>
+        <h2 class="section-title">Uma pequena amostra do que<br>você vai encontrar</h2>
+        <p class="section-sub">19 receitas completas com fotos, ingredientes e passo a passo</p>
+
+        <div class="recipe-grid">
+            <div class="recipe-item">Bolo de Chocolate Super Macio</div>
+            <div class="recipe-item">Bolo de Laranja com Calda</div>
+            <div class="recipe-item">Bolo de Cenoura com Cobertura</div>
+            <div class="recipe-item">Bolo de Banana com Canela</div>
+            <div class="recipe-item">Bolo de Limão Cremoso</div>
+            <div class="recipe-item">Bolo de Maracujá</div>
+            <div class="recipe-item">Bolo de Milho Úmido</div>
+            <div class="recipe-item">Bolo de Mandioca</div>
+            <div class="recipe-item">Bolo de Abacate</div>
+            <div class="recipe-item">Bolo de Abóbora</div>
+            <div class="recipe-item">Bolo Saudável (só frutas)</div>
+            <div class="recipe-item">Bolo do Rei sem Açúcar</div>
+            <div class="recipe-item full">+ 7 receitas bônus incluídas no ebook</div>
+        </div>
+
+        <ul class="bonus-list">
+            <li>
+                <div class="bonus-icon">🎁</div>
+                <div><strong>Guia: Mix de Farinhas Sem Glúten</strong> — 3 versões para diferentes texturas</div>
+            </li>
+            <li>
+                <div class="bonus-icon">🎁</div>
+                <div><strong>Guia: Como substituir o açúcar</strong> — eritritol, xilitol e frutas naturais</div>
+            </li>
+            <li>
+                <div class="bonus-icon">🎁</div>
+                <div><strong>Guia: Versão vegana</strong> — como substituir os ovos em qualquer receita</div>
+            </li>
+        </ul>
+
+        <div class="mt-40">
+            <a href="SEU_LINK_CAKTO" class="btn-cta">
+                QUERO APROVEITAR TUDO ISSO<br><small style="font-size:13px;font-weight:500;opacity:.8;text-transform:none;letter-spacing:0;"><s style="opacity:.75;">DE R$47,90</s> &nbsp;POR APENAS <span style="font-size:120%;font-weight:900;color:#fff;">R$19,90</span></small>
+                <small>Acesso imediato · PDF em qualquer dispositivo</small>
+            </a>
+            <p class="cta-security-dark mt-12">🔒 Pagamento 100% seguro</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOTOS DOS BOLOS
+══════════════════════════════════════ -->
+<section class="section">
+    <div class="container">
+        <p class="section-eyebrow">As receitas</p>
+        <h2 class="section-title">Bolos de verdade.<br><em>Ingredientes reais.</em></h2>
+        <p class="section-sub" style="margin-bottom:28px;">
+            Feitos com ingredientes reais — sem açúcar refinado, sem glúten
+        </p>
+
+        <div class="photo-grid">
+            <img src="bolo-chocolate.png"  alt="Bolo de Chocolate" loading="lazy">
+            <img src="bolo-laranja.png"    alt="Bolo de Laranja"   loading="lazy">
+            <img src="bolo-maracuja.png"   alt="Bolo de Maracujá"  loading="lazy">
+            <img src="pao-caseiro.png"     alt="Pão Caseiro"       loading="lazy">
+            <img src="pao-cacau.png"       alt="Pão de Cacau"      loading="lazy">
+            <img src="pao-australiano.png" alt="Pão Australiano"   loading="lazy">
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     DEPOIMENTOS
+══════════════════════════════════════ -->
+<section class="section section-gray">
+    <div class="container">
+        <p class="section-eyebrow">Resultados reais</p>
+        <h2 class="section-title">O que quem já fez<br><em>está dizendo</em></h2>
+        <p class="section-sub">Depoimentos reais de clientes</p>
+
+        <div class="testimonials-grid">
+
+            <div class="testimonial-card">
+                <div class="wa-header">
+                    <div class="wa-dot" style="background:#128C7E;">A</div>
+                    <div class="wa-name">Ana Paula M.</div>
+                </div>
+                <div class="wa-bubble">
+                    Minha mãe tem diabetes há 10 anos e parou de comer bolo completamente. Fiz o bolo de chocolate pra ela no aniversário — ela chorou quando descobriu que era sem açúcar. Nunca pensei que fosse conseguir dar isso pra ela de volta 😭🎂
+                </div>
+                <div class="wa-time">São Paulo, SP · ✓✓</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="wa-header">
+                    <div class="wa-dot" style="background:#075E54;">C</div>
+                    <div class="wa-name">Cláudia R.</div>
+                </div>
+                <div class="wa-bubble">
+                    Já fiz três vezes em uma semana!! Meu marido e meus filhos comem sem saber que é sem açúcar. Quando eu conto, ninguém acredita. O sabor é idêntico ao bolo normal 😍
+                </div>
+                <div class="wa-time">Belo Horizonte, MG · ✓✓</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="wa-header">
+                    <div class="wa-dot" style="background:#25D366;">M</div>
+                    <div class="wa-name">Márcia F.</div>
+                </div>
+                <div class="wa-bubble">
+                    Tentei outras receitas sem açúcar antes. Borrachudo, pesado, sem gosto nenhum. Essas são completamente diferentes!! Fiz o bolo de cenoura e minha família pediu pra fazer de novo ♥️
+                </div>
+                <div class="wa-time">Porto Alegre, RS · ✓✓</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="wa-header">
+                    <div class="wa-dot" style="background:#128C7E;">R</div>
+                    <div class="wa-name">Renata S.</div>
+                </div>
+                <div class="wa-bubble">
+                    Recebi o diagnóstico de pré-diabetes há 2 meses e estava desesperada. Agora tenho bolo no café da manhã todos os dias sem culpa e sem medo. Não costumo comentar online, mas esse ebook merece ✨
+                </div>
+                <div class="wa-time">Curitiba, PR · ✓✓</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="wa-header">
+                    <div class="wa-dot" style="background:#075E54;">L</div>
+                    <div class="wa-name">Luíza T.</div>
+                </div>
+                <div class="wa-bubble">
+                    Minha glicemia em jejum estava em 138. O médico mandou cortar doces. Mas com essas receitas consegui controlar e ainda comer bolo no final de semana. Minha glicemia caiu pra 102 em 3 meses 🙌
+                </div>
+                <div class="wa-time">Brasília, DF · ✓✓</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="wa-header">
+                    <div class="wa-dot" style="background:#25D366;">F</div>
+                    <div class="wa-name">Fátima O.</div>
+                </div>
+                <div class="wa-bubble">
+                    Comprei com desconfiança, achei que ia ser mais uma receita seca e sem graça. Errei feio 😂 O bolo de banana com canela é melhor que o original. Já indiquei pra todas as amigas do grupo de diabetes!
+                </div>
+                <div class="wa-time">Fortaleza, CE · ✓✓</div>
+            </div>
+
+        </div>
+
+        <div class="mt-40">
+            <a href="SEU_LINK_CAKTO" class="btn-cta">
+                SIM! EU TAMBÉM QUERO ESSAS RECEITAS
+                <small><s style="opacity:.75;">DE R$47,90</s> &nbsp;POR APENAS <span style="font-size:120%;font-weight:900;color:#fff;">R$19,90</span></small>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     VANTAGENS
+══════════════════════════════════════ -->
+<section class="section">
+    <div class="container">
+        <p class="section-eyebrow">Por que escolher</p>
+        <h2 class="section-title">Tudo que você precisa<br><em>em um só lugar</em></h2>
+
+        <div class="advantages">
+            <div class="advantage-card">
+                <div class="advantage-icon">📱</div>
+                <div class="advantage-title">Acesso em qualquer dispositivo</div>
+                <div class="advantage-text">Baixe o PDF e leia no celular, tablet ou computador. Sem aplicativo, sem login.</div>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">⚡</div>
+                <div class="advantage-title">Acesso imediato</div>
+                <div class="advantage-text">Após o pagamento, você recebe o link no e-mail na hora. Pode começar hoje.</div>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">🏠</div>
+                <div class="advantage-title">Ingredientes de mercado</div>
+                <div class="advantage-text">Farinha de arroz, eritritol e xilitol em qualquer supermercado maior ou Amazon.</div>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">👩‍🍳</div>
+                <div class="advantage-title">Para qualquer nível</div>
+                <div class="advantage-text">Passo a passo detalhado. Se você já fez um bolo na vida, consegue fazer qualquer receita.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══════════════════════════════════════
+     OFERTA + PREÇO
+══════════════════════════════════════ -->
+<section class="section section-green">
+    <div class="container">
+        <p class="section-eyebrow-white">Promoção por tempo limitado</p>
+        <h2 class="section-title">Oferta especial<br><em>de hoje</em></h2>
+        <p class="section-sub" style="margin-bottom:36px;">
+            Garanta agora com desconto de lançamento
+        </p>
+
+        <div class="offer-box">
+            <span class="offer-promo-badge">Desconto de lançamento</span>
+
+            <p class="offer-from">De R$47,90</p>
+            <div class="offer-price"><span>R$</span>19<span style="font-size:36px;">,90</span></div>
+            <p class="offer-label">Pagamento único · Sem mensalidade</p>
+
+            <ul class="offer-includes">
+                <li>19 receitas de bolo sem glúten e sem açúcar</li>
+                <li>Guia: Mix de Farinhas Sem Glúten (3 versões)</li>
+                <li>Guia: Como substituir o açúcar</li>
+                <li>Guia: Versão vegana dos bolos</li>
+                <li>O segredo da farinha de arroz que ninguém conta</li>
+                <li>Acesso imediato · Download em PDF</li>
+            </ul>
+
+            <a href="SEU_LINK_CAKTO" class="btn-cta">
+                QUERO APROVEITAR ESSA OFERTA AGORA
+                <small>Clique aqui e garanta antes que o preço suba</small>
+            </a>
+            <p class="text-small mt-20">🔒 Pagamento 100% seguro</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     AUTORA
+══════════════════════════════════════ -->
+<section class="section section-gray">
+    <div class="container">
+        <p class="section-eyebrow">Quem criou esse kit</p>
+        <h2 class="section-title" style="margin-bottom:36px;">Desenvolvido por quem<br><em>entende de glicemia</em></h2>
+
+        <div class="author-section">
+            <div class="author-photo-wrap">
+                <img src="dra-clara-cozinha.png" alt="Dra. Clara Melo">
+            </div>
+            <div>
+                <div class="author-name">Dra. Clara Melo</div>
+                <div class="author-crn">Nutricionista · Especialista em Saúde Metabólica</div>
+                <p class="author-bio">
+                    Dra. Clara Melo é nutricionista especializada em saúde metabólica e controle do açúcar no sangue.
+                    Após anos acompanhando pacientes com diabetes tipo 2 e resistência à insulina,
+                    desenvolveu um acervo de receitas que prova que comer bem e controlar a glicemia
+                    não precisam ser objetivos separados. Suas receitas são preparadas com ingredientes
+                    reais, sem açúcar refinado e sem glúten — pensadas para quem quer resultado sem
+                    abrir mão do sabor.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     GARANTIA
+══════════════════════════════════════ -->
+<section class="section">
+    <div class="container">
+        <div class="guarantee-box">
+            <!-- Substitua pelo arquivo real: <img src="selo.png" class="seal-img" alt="Garantia"> -->
+            <div style="width:90px;height:90px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:44px;flex-shrink:0;">🛡️</div>
+            <div>
+                <div class="guarantee-title">Garantia incondicional de 7 dias</div>
+                <p class="guarantee-text">
+                    Satisfação garantida ou seu dinheiro de volta. Você tem até 7 dias para
+                    solicitar a devolução do valor pago pelo produto. Sem perguntas,
+                    sem burocracia. O risco é todo nosso.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FINAL CTA
+══════════════════════════════════════ -->
+<section class="section section-dark">
+    <div class="container" style="text-align:center;">
+        <p class="section-eyebrow-white">Última chamada</p>
+        <h2 class="section-title" style="color:#fff;margin-bottom:16px;">
+            Você merece comer bolo.<br>
+            <em style="color:var(--yellow);">Sem culpa. Sem medo.</em>
+        </h2>
+        <p class="section-sub">
+            <s style="opacity:.6;">De R$47,90</s> — por apenas R$19,90, a Dra. Clara coloca nas suas mãos tudo que ela ensina nas consultas.
+        </p>
+
+        <a href="SEU_LINK_CAKTO" class="btn-cta-green">
+            SIM! EU QUERO ESSE KIT DE RECEITAS<br><small style="font-size:13px;font-weight:500;opacity:.8;text-transform:none;letter-spacing:0;"><s style="opacity:.75;">DE R$47,90</s> &nbsp;POR APENAS <span style="font-size:120%;font-weight:900;color:#fff;">R$19,90</span></small>
+            <small>Acesso imediato · Garantia de 7 dias</small>
+        </a>
+        <p class="cta-security mt-12">🔒 Pagamento 100% seguro</p>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+    <p>
+        © 2026 Cozinha Metabólica — Dra. Clara Melo<br>
+        <a href="#">Política de Privacidade</a> &nbsp;·&nbsp; <a href="#">Termos de Uso</a><br><br>
+        Este produto é um e-book digital entregue em formato PDF.<br>
+        As receitas foram desenvolvidas por nutricionista e não substituem orientação médica individualizada.<br>
+        Os resultados podem variar de pessoa para pessoa.
+    </p>
+</footer>
+
+</body>
+</html>
